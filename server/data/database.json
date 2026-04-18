@@ -1,0 +1,297 @@
+{
+  "palaces": [
+    {
+      "id": 1,
+      "name": "明清紫禁城",
+      "dynasty": "明、清",
+      "area": 720000,
+      "houses": 8700,
+      "startYear": 1406,
+      "endYear": 1924,
+      "century": "15th-20th",
+      "location": {
+        "lat": 39.9163,
+        "lng": 116.3972,
+        "city": "北京",
+        "province": "北京市"
+      },
+      "layout": {
+        "outerCourt": 60,
+        "innerCourt": 30,
+        "garden": 10
+      },
+      "description": "世界现存规模最大、保存最为完整的木质结构古建筑群，是中国古代宫廷文化的巅峰之作。",
+      "highlights": [
+        "世界文化遗产",
+        "明清两代皇宫",
+        "约8700间房屋",
+        "72万平方米"
+      ],
+      "significance": "紫禁城是中华民族的瑰宝，见证了明清两代24位皇帝的统治，承载着深厚的历史文化内涵。",
+      "architecture": "建筑风格融合了汉、满、蒙等民族特色，体现了中国古代建筑的最高成就。",
+      "materials": {
+        "wood": 200000,
+        "brick": 5000000,
+        "tile": 1500000
+      },
+      "influences": {
+        "palace": 95,
+        "government": 90,
+        "international": 98
+      },
+      "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1920&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=600&q=80"
+    },
+    {
+      "id": 2,
+      "name": "唐代大明宫",
+      "dynasty": "唐",
+      "area": 3200000,
+      "houses": 4000,
+      "startYear": 634,
+      "endYear": 904,
+      "century": "7th-10th",
+      "location": {
+        "lat": 34.2733,
+        "lng": 108.9667,
+        "city": "西安",
+        "province": "陕西省"
+      },
+      "layout": {
+        "outerCourt": 55,
+        "innerCourt": 35,
+        "garden": 10
+      },
+      "description": "盛唐时期的皇宫典范，中国古代宫殿建筑的巅峰之作，见证了唐朝的繁荣与辉煌。",
+      "highlights": [
+        "盛唐皇宫代表",
+        "3.2平方公里",
+        "含元殿壮丽巍峨",
+        "丝绸之路起点"
+      ],
+      "significance": "大明宫是唐代最重要的皇宫，被誉为中国历史的中心，对后世宫殿建筑影响深远。",
+      "architecture": "大明宫的建筑布局严谨对称，殿宇宏伟壮丽，代表了唐代建筑的极高成就。",
+      "materials": {
+        "wood": 150000,
+        "brick": 3200000,
+        "tile": 1200000
+      },
+      "influences": {
+        "palace": 98,
+        "government": 85,
+        "international": 90
+      },
+      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=1920&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=600&q=80"
+    },
+    {
+      "id": 3,
+      "name": "元代大都皇宫",
+      "dynasty": "元",
+      "area": 4800000,
+      "houses": 4000,
+      "startYear": 1267,
+      "endYear": 1368,
+      "century": "13th-14th",
+      "location": {
+        "lat": 39.9042,
+        "lng": 116.4074,
+        "city": "北京",
+        "province": "北京市"
+      },
+      "layout": {
+        "outerCourt": 50,
+        "innerCourt": 40,
+        "garden": 10
+      },
+      "description": "元朝帝国的政治中心，展现了蒙古族与汉族文化交融的独特建筑风格。",
+      "highlights": ["元朝皇宫", "草原文化融合", "政治文化中心", "4.8平方公里"],
+      "significance": "大都皇宫是元朝的权力中心，见证了蒙古族入主中原的历史，促进了民族融合。",
+      "architecture": "融合了蒙古族帐幕文化与汉族宫殿建筑传统，具有独特的建筑风格。",
+      "materials": {
+        "wood": 120000,
+        "brick": 2800000,
+        "tile": 1000000
+      },
+      "influences": {
+        "palace": 85,
+        "government": 80,
+        "international": 85
+      },
+      "image": "https://images.unsplash.com/photo-1578328819058-b69f4c6c5f1b?w=1920&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1578328819058-b69f4c6c5f1b?w=600&q=80"
+    },
+    {
+      "id": 4,
+      "name": "宋代东京皇宫",
+      "dynasty": "宋",
+      "area": 2500000,
+      "houses": 5000,
+      "startYear": 962,
+      "endYear": 1127,
+      "century": "10th-12th",
+      "location": {
+        "lat": 34.8036,
+        "lng": 114.3072,
+        "city": "开封",
+        "province": "河南省"
+      },
+      "layout": {
+        "outerCourt": 52,
+        "innerCourt": 38,
+        "garden": 10
+      },
+      "description": "繁华市井与皇家园林的完美融合，展现了宋代高度发达的城市文明。",
+      "highlights": ["北宋皇宫", "繁华东京城", "文化繁荣", "2.5平方公里"],
+      "significance": "宋代东京皇宫见证了北宋的繁荣经济和文化昌盛，是当时世界上最繁华的城市之一。",
+      "architecture": "皇宫布局精致典雅，园林设计精巧，体现了宋代建筑的文化品位和艺术成就。",
+      "materials": {
+        "wood": 100000,
+        "brick": 2500000,
+        "tile": 900000
+      },
+      "influences": {
+        "palace": 80,
+        "government": 75,
+        "international": 80
+      },
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+    },
+    {
+      "id": 5,
+      "name": "汉代未央宫",
+      "dynasty": "汉",
+      "area": 4840000,
+      "houses": 4000,
+      "startYear": -200,
+      "endYear": 190,
+      "century": "2nd BCE-6th",
+      "location": {
+        "lat": 34.3233,
+        "lng": 108.9167,
+        "city": "西安",
+        "province": "陕西省"
+      },
+      "layout": {
+        "outerCourt": 48,
+        "innerCourt": 42,
+        "garden": 10
+      },
+      "description": "丝绸之路的起点，西汉帝国的政治文化中心，中国古代宫殿的典范之作。",
+      "highlights": ["西汉皇宫", "4.84平方公里", "丝绸之路起点", "长乐未央"],
+      "significance": "未央宫是西汉帝国的权力中枢，开创了天人合一的宫殿建筑理念，影响深远。",
+      "architecture": "未央宫建筑规模宏大，布局严谨，体现了汉代建筑的雄伟气势和精密规划。",
+      "materials": {
+        "wood": 180000,
+        "brick": 3500000,
+        "tile": 1400000
+      },
+      "influences": {
+        "palace": 100,
+        "government": 90,
+        "international": 85
+      },
+      "image": "https://images.unsplash.com/photo-1582653291997-079a1b04e6a1?w=1920&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1582653291997-079a1b04e6a1?w=600&q=80"
+    },
+    {
+      "id": 6,
+      "name": "隋代大兴宫",
+      "dynasty": "隋",
+      "area": 1920000,
+      "houses": 3500,
+      "startYear": 582,
+      "endYear": 662,
+      "century": "6th-10th",
+      "location": {
+        "lat": 34.2633,
+        "lng": 108.9567,
+        "city": "西安",
+        "province": "陕西省"
+      },
+      "layout": {
+        "outerCourt": 50,
+        "innerCourt": 40,
+        "garden": 10
+      },
+      "description": "隋唐盛世的开端，中国古代宫殿建筑从秦汉向盛唐过渡的重要见证。",
+      "highlights": ["隋朝皇宫", "1.92平方公里", "隋唐过渡", "建筑典范"],
+      "significance": "大兴宫是隋朝皇宫，为唐代大明宫的建设奠定了基础，在中国宫殿建筑史上具有重要地位。",
+      "architecture": "大兴宫建筑规模宏大，继承了汉代宫殿建筑的优秀传统，并有所创新发展。",
+      "materials": {
+        "wood": 160000,
+        "brick": 3000000,
+        "tile": 1100000
+      },
+      "influences": {
+        "palace": 88,
+        "government": 82,
+        "international": 75
+      },
+      "image": "https://images.unsplash.com/photo-1590073242678-70ee3fc28f8e?w=1920&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1590073242678-70ee3fc28f8e?w=600&q=80"
+    }
+  ],
+  "craftTimeline": [
+    {
+      "year": -500,
+      "dynasty": "春秋",
+      "craft": "斗拱",
+      "event": "斗拱雏形出现"
+    },
+    {
+      "year": -200,
+      "dynasty": "汉",
+      "craft": "榫卯",
+      "event": "榫卯技术成熟"
+    },
+    {
+      "year": 600,
+      "dynasty": "唐",
+      "craft": "斗拱",
+      "event": "斗拱发展至鼎盛"
+    },
+    {
+      "year": 1100,
+      "dynasty": "宋",
+      "craft": "彩绘",
+      "event": "《营造法式》颁布"
+    },
+    {
+      "year": 1400,
+      "dynasty": "明",
+      "craft": "斗拱",
+      "event": "斗拱装饰化"
+    }
+  ],
+  "metadata": {
+    "version": "2.0.0",
+    "lastUpdated": "2026-04-17",
+    "totalPalaces": 6,
+    "areaUnit": "平方米",
+    "description": "中华宫殿文明数据库 - 包含六大中国古代宫殿的详细资料",
+    "notes": "负值startYear表示公元前；houses数量为历史估算值，非精确统计"
+  },
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@palacevista.com",
+      "password": "db1a380a25806ec0fc7636b9fcb14ce0818bbc966a138444d1380802365b04858bbf70c765a914a935b10be7348f7fc027325b7badd28d7b3be8292a3ac005ce",
+      "role": "admin",
+      "isActive": true,
+      "createdAt": "2026-04-14T10:59:40.329Z",
+      "updatedAt": "2026-04-14T10:59:40.329Z"
+    }
+  ],
+  "notes": [],
+  "quizScores": [],
+  "visitLogs": [],
+  "counters": {
+    "userId": 0,
+    "noteId": 0,
+    "quizScoreId": 0,
+    "visitLogId": 0
+  }
+}

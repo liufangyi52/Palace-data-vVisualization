@@ -1,0 +1,249 @@
+/* ============================================
+   中华宫殿 - 金色浮雕科技风图标样式
+   Golden Embossed Tech-Style Icon System
+   ============================================ */
+
+/* 图标基础类 */
+.ri {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: inherit;
+  line-height: 1;
+}
+
+/* 金色浮雕效果 - 大图标 (32px+) */
+.icon-embossed-lg {
+  position: relative;
+  color: #daa520;
+  font-size: 32px;
+  text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.8),
+    -1px -1px 1px rgba(218, 165, 32, 0.3),
+    0 0 20px rgba(218, 165, 32, 0.4);
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6));
+  transition: all 0.3s ease;
+}
+
+.icon-embossed-lg:hover {
+  color: #ffd700;
+  text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.8),
+    -1px -1px 2px rgba(255, 215, 0, 0.5),
+    0 0 30px rgba(255, 215, 0, 0.6);
+  transform: translateY(-2px);
+}
+
+/* 金色浮雕效果 - 中图标 (24px) */
+.icon-embossed-md {
+  position: relative;
+  color: #daa520;
+  font-size: 24px;
+  text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.8),
+    -1px -1px 1px rgba(218, 165, 32, 0.3),
+    0 0 15px rgba(218, 165, 32, 0.3);
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
+  transition: all 0.3s ease;
+}
+
+.icon-embossed-md:hover {
+  color: #ffd700;
+  text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.8),
+    -1px -1px 2px rgba(255, 215, 0, 0.5),
+    0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+/* 金色浮雕效果 - 小图标 (16-20px) */
+.icon-embossed-sm {
+  position: relative;
+  color: #daa520;
+  font-size: 18px;
+  text-shadow:
+    1px 1px 1px rgba(0, 0, 0, 0.8),
+    -1px -1px 1px rgba(218, 165, 32, 0.2),
+    0 0 10px rgba(218, 165, 32, 0.2);
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.6));
+  transition: all 0.3s ease;
+}
+
+.icon-embossed-sm:hover {
+  color: #ffd700;
+}
+
+/* 深红浮雕效果 - 用于强调 */
+.icon-embossed-red {
+  position: relative;
+  color: #8b0000;
+  font-size: 24px;
+  text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.8),
+    -1px -1px 1px rgba(139, 0, 0, 0.3),
+    0 0 15px rgba(139, 0, 0, 0.4);
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
+}
+
+/* 卡片图标背景样式 */
+.card-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(
+    135deg,
+    rgba(218, 165, 32, 0.15),
+    rgba(139, 0, 0, 0.1)
+  );
+  border: 2px solid rgba(218, 165, 32, 0.4);
+  border-radius: 12px;
+  box-shadow:
+    inset 0 2px 4px rgba(218, 165, 32, 0.2),
+    0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.card-icon-wrapper:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(218, 165, 32, 0.25),
+    rgba(139, 0, 0, 0.15)
+  );
+  border-color: #daa520;
+  box-shadow:
+    inset 0 2px 6px rgba(218, 165, 32, 0.3),
+    0 6px 20px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(218, 165, 32, 0.3);
+}
+
+.card-icon-wrapper i {
+  font-size: 28px;
+  color: #daa520;
+  text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.8),
+    0 0 10px rgba(218, 165, 32, 0.4);
+}
+
+/* 统计卡片图标样式 */
+.stat-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(
+    145deg,
+    rgba(218, 165, 32, 0.2),
+    rgba(139, 0, 0, 0.15)
+  );
+  border-radius: 10px;
+  border: 1px solid rgba(218, 165, 32, 0.3);
+  box-shadow:
+    inset 0 1px 3px rgba(218, 165, 32, 0.2),
+    0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.stat-icon-wrapper i {
+  font-size: 24px;
+  color: #daa520;
+  text-shadow: 0 0 8px rgba(218, 165, 32, 0.5);
+}
+
+/* 导航图标样式 */
+.nav-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(218, 165, 32, 0.1);
+  border: 1px solid rgba(218, 165, 32, 0.3);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-icon-wrapper:hover {
+  background: rgba(218, 165, 32, 0.2);
+  border-color: #daa520;
+}
+
+.nav-icon-wrapper i {
+  font-size: 20px;
+  color: #daa520;
+}
+
+/* 按钮图标样式 */
+.btn-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(218, 165, 32, 0.15);
+  border: 1px solid rgba(218, 165, 32, 0.4);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-icon-wrapper:hover {
+  background: rgba(218, 165, 32, 0.3);
+  box-shadow: 0 0 15px rgba(218, 165, 32, 0.4);
+}
+
+.btn-icon-wrapper i {
+  font-size: 18px;
+  color: #daa520;
+}
+
+/* 发光动画效果 */
+@keyframes icon-glow {
+  0%,
+  100% {
+    text-shadow:
+      1px 1px 2px rgba(0, 0, 0, 0.8),
+      -1px -1px 1px rgba(218, 165, 32, 0.3),
+      0 0 15px rgba(218, 165, 32, 0.3);
+  }
+  50% {
+    text-shadow:
+      1px 1px 2px rgba(0, 0, 0, 0.8),
+      -1px -1px 2px rgba(255, 215, 0, 0.5),
+      0 0 25px rgba(255, 215, 0, 0.5);
+  }
+}
+
+.icon-glow {
+  animation: icon-glow 2s ease-in-out infinite;
+}
+
+/* 脉冲动画效果 */
+@keyframes icon-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.icon-pulse {
+  animation: icon-pulse 2s ease-in-out infinite;
+}
+
+/* 旋转动画效果 */
+@keyframes icon-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.icon-spin {
+  animation: icon-spin 3s linear infinite;
+}
