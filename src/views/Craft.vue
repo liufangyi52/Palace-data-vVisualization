@@ -42,7 +42,7 @@
 import { ref, onMounted, onUnmounted, nextTick } from "vue";
 import { useRouter } from "vue-router";
 import * as echarts from "echarts";
-import { palaceApi } from "@/api";
+import { palaceData } from "@/api/mockData";
 
 const router = useRouter();
 const timelineData = ref([]);
@@ -56,22 +56,12 @@ let materialPie = null;
 const fetchData = async () => {
   try {
     loading.value = true;
-    const [materialsRes, timelineRes] = await Promise.all([
-      palaceApi.getMaterials(),
-      palaceApi.getCraftTimeline(),
-    ]);
-
-    if (materialsRes.data.code === 200) {
-      materials.value = materialsRes.data.data;
-    }
-    if (timelineRes.data.code === 200) {
-      timelineData.value = timelineRes.data.data;
-    }
+    materials.value = palaceData.materials;
+    timelineData.value = palaceData.craftTimeline;
   } catch (error) {
     console.error("获取数据失败:", error);
-    const { palaceData: mockData } = await import("@/api/mockData.js");
-    materials.value = mockData.palaceData.materials;
-    timelineData.value = mockData.palaceData.craftTimeline;
+    materials.value = palaceData.materials;
+    timelineData.value = palaceData.craftTimeline;
   } finally {
     loading.value = false;
     initAllCharts();

@@ -1,7 +1,11 @@
 import express from "express";
 import cors from "cors";
 import { rateLimit } from "./middleware/rateLimit.js";
-import { errorHandler, notFoundHandler, requestLogger } from "./middleware/errorHandler.js";
+import {
+  errorHandler,
+  notFoundHandler,
+  requestLogger,
+} from "./middleware/errorHandler.js";
 import palaceController from "./controllers/palaceController.js";
 import config from "./config/index.js";
 
@@ -16,10 +20,12 @@ app.use(requestLogger);
 app.get("/api/health", palaceController.healthCheck);
 app.get("/api", palaceController.getAllPalaces);
 app.get("/api/palaces", palaceController.getAllPalaces);
-app.get("/api/palaces/:id", palaceController.getPalaceById);
 app.get("/api/palaces/statistics", palaceController.getStatistics);
 app.get("/api/palaces/overview", palaceController.getOverview);
 app.get("/api/palaces/compare", palaceController.comparePalaces);
+app.get("/api/palaces/top", palaceController.getTopPalaces);
+app.get("/api/palaces/search", palaceController.searchPalaces);
+app.get("/api/palaces/:id", palaceController.getPalaceById);
 app.get("/api/materials", palaceController.getMaterials);
 app.get("/api/craft-timeline", palaceController.getCraftTimeline);
 app.get("/api/dynasty-distribution", palaceController.getDynastyDistribution);

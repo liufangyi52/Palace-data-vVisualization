@@ -15,7 +15,7 @@ if (!existsSync(LOG_DIR)) {
 
 const PORT = config.server.port;
 
-const server = app.listen(PORT, () => {
+const server = app.listen(PORT, "0.0.0.0", () => {
   logger.info(`🚀 中华宫殿后端服务已启动`);
   logger.info(`❤️  健康检查: http://localhost:${PORT}/api/health`);
   logger.info(`🌐 环境: ${config.server.env}`);

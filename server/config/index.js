@@ -4,7 +4,7 @@ const config = {
     env: process.env.NODE_ENV || "development",
   },
   jwt: {
-    secret: process.env.JWT_SECRET || "palace-vista-secret-key-2024",
+    secret: process.env.JWT_SECRET || "change-this-secret-in-production",
     expiresIn: process.env.JWT_EXPIRES_IN || "7d",
     refreshExpiresIn: process.env.JWT_REFRESH_EXPIRES_IN || "30d",
   },

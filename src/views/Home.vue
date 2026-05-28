@@ -5,9 +5,9 @@
         <div class="hero-content">
           <div class="brand-badge">Palace Vista</div>
           <h1 class="hero-title">
-            <span class="title-line">中华宫殿</span>
-            <span class="title-accent">数字孪生</span>
-            <span class="title-line">可视化平台</span>
+            <span class="title-line">“孪境·丹宸”</span>
+            <span class="title-accent">基于数字孪生的中华宫殿</span>
+            <span class="title-line">可视化系统</span>
           </h1>
           <p class="hero-description">
             融合AI智能与数据可视化技术，呈现中国古代宫殿文明的辉煌与沧桑
@@ -18,7 +18,7 @@
               <span class="stat-label">历史宫殿</span>
             </div>
             <div class="stat-item">
-              <span class="stat-value">5000+</span>
+              <span class="stat-value">2100+</span>
               <span class="stat-label">历史年份</span>
             </div>
             <div class="stat-item">
@@ -57,11 +57,10 @@
               <h3 class="card-title">平台功能导览</h3>
               <p class="card-desc">7大可视化模块与3D交互展示</p>
               <ul class="card-features">
-               
                 <li>🏛️ 建筑规制</li>
                 <li>🔨 工艺材料</li>
                 <li>🌟 成就影响</li>
-                 <li>📈 数据可视化</li>
+                <li>📈 数据可视化</li>
               </ul>
             </div>
             <div class="card-footer">
@@ -104,10 +103,7 @@
       </div>
 
       <div class="footer-section">
-        <p class="footer-text">
-          © 2026 中华宫殿数字孪生可视化平台 | 技术支持：AI +
-          数据可视化
-        </p>
+        <p class="footer-text">© 2026 孪境·丹宸 | 技术支持：AI + 数据可视化</p>
       </div>
     </ParticleBackground>
   </div>

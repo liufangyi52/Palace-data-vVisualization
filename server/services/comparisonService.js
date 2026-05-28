@@ -26,17 +26,17 @@ class ComparisonService {
           ratio: palace1.houses && palace2.houses ? (palace1.houses / palace2.houses).toFixed(2) : null,
         },
         duration: {
-          value1: Math.abs(palace1.endYear - palace1.startYear),
-          value2: Math.abs(palace2.endYear - palace2.startYear),
-          winner: Math.abs(palace1.endYear - palace1.startYear) >= Math.abs(palace2.endYear - palace2.startYear) ? 1 : 2,
+          value1: Math.abs(palace1.end_year - palace1.start_year),
+          value2: Math.abs(palace2.end_year - palace2.start_year),
+          winner: Math.abs(palace1.end_year - palace1.start_year) >= Math.abs(palace2.end_year - palace2.start_year) ? 1 : 2,
         },
         timeline: {
-          start1: palace1.startYear,
-          start2: palace2.startYear,
-          end1: palace1.endYear,
-          end2: palace2.endYear,
-          earlier: palace1.startYear <= palace2.startYear ? 1 : 2,
-          later: palace1.endYear >= palace2.endYear ? 1 : 2,
+          start1: palace1.start_year,
+          start2: palace2.start_year,
+          end1: palace1.end_year,
+          end2: palace2.end_year,
+          earlier: palace1.start_year <= palace2.start_year ? 1 : 2,
+          later: palace1.end_year >= palace2.end_year ? 1 : 2,
         },
       },
       conclusion: this.generateConclusion(palace1, palace2),
@@ -50,9 +50,9 @@ class ComparisonService {
       dynasty: palace.dynasty,
       area: palace.area,
       houses: palace.houses,
-      startYear: palace.startYear,
-      endYear: palace.endYear,
-      location: palace.location || "",
+      startYear: palace.start_year,
+      endYear: palace.end_year,
+      location: palace.city ? `${palace.city}, ${palace.province}` : "",
     };
   }
 
@@ -71,8 +71,8 @@ class ComparisonService {
       conclusions.push(`${p2.name}房屋数量更多，比${p1.name}多${p2.houses - p1.houses}间`);
     }
 
-    const duration1 = Math.abs(p1.endYear - p1.startYear);
-    const duration2 = Math.abs(p2.endYear - p2.startYear);
+    const duration1 = Math.abs(p1.end_year - p1.start_year);
+    const duration2 = Math.abs(p2.end_year - p2.start_year);
     if (duration1 > duration2) {
       conclusions.push(`${p1.name}使用时间更长，达${duration1}年`);
     } else if (duration1 < duration2) {
@@ -101,7 +101,7 @@ class ComparisonService {
       byArea: [...palaces].sort((a, b) => b.area - a.area),
       byHouses: [...palaces].sort((a, b) => b.houses - a.houses),
       byDuration: [...palaces].sort(
-        (a, b) => Math.abs(b.endYear - b.startYear) - Math.abs(a.endYear - a.startYear)
+        (a, b) => Math.abs(b.end_year - b.start_year) - Math.abs(a.end_year - a.start_year)
       ),
     };
 

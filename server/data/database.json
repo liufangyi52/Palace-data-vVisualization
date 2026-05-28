@@ -264,34 +264,5 @@
       "craft": "斗拱",
       "event": "斗拱装饰化"
     }
-  ],
-  "metadata": {
-    "version": "2.0.0",
-    "lastUpdated": "2026-04-17",
-    "totalPalaces": 6,
-    "areaUnit": "平方米",
-    "description": "中华宫殿文明数据库 - 包含六大中国古代宫殿的详细资料",
-    "notes": "负值startYear表示公元前；houses数量为历史估算值，非精确统计"
-  },
-  "users": [
-    {
-      "id": 1,
-      "username": "admin",
-      "email": "admin@palacevista.com",
-      "password": "db1a380a25806ec0fc7636b9fcb14ce0818bbc966a138444d1380802365b04858bbf70c765a914a935b10be7348f7fc027325b7badd28d7b3be8292a3ac005ce",
-      "role": "admin",
-      "isActive": true,
-      "createdAt": "2026-04-14T10:59:40.329Z",
-      "updatedAt": "2026-04-14T10:59:40.329Z"
-    }
-  ],
-  "notes": [],
-  "quizScores": [],
-  "visitLogs": [],
-  "counters": {
-    "userId": 0,
-    "noteId": 0,
-    "quizScoreId": 0,
-    "visitLogId": 0
-  }
+  ]
 }

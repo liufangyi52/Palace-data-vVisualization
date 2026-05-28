@@ -96,7 +96,7 @@
 import { ref, computed, onMounted, onUnmounted, nextTick } from "vue";
 import { useRouter } from "vue-router";
 import * as echarts from "echarts";
-import { palaceApi } from "@/api";
+import { palaceData } from "@/api/mockData";
 
 const router = useRouter();
 const palaces = ref([]);
@@ -163,25 +163,11 @@ const goToSlide = (index) => {
 const fetchData = async () => {
   try {
     loading.value = true;
-    const response = await palaceApi.getPalaces();
-
-    if (
-      response?.data?.code === 200 &&
-      response?.data?.data?.palaces?.length > 0
-    ) {
-      palaces.value = response.data.data.palaces;
-    } else {
-      const { palaceData } = await import("@/api/mockData.js");
-      palaces.value = palaceData.palaces;
-    }
+    const res = palaceData.palaces;
+    palaces.value = res || [];
   } catch (error) {
     console.error("获取数据失败:", error);
-    try {
-      const { palaceData } = await import("@/api/mockData.js");
-      palaces.value = palaceData.palaces;
-    } catch (e) {
-      console.error("加载mock数据失败:", e);
-    }
+    palaces.value = palaceData.palaces;
   } finally {
     loading.value = false;
     nextTick(() => {

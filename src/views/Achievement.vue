@@ -77,7 +77,7 @@
 import { ref, onMounted, onUnmounted, nextTick } from "vue";
 import { useRouter } from "vue-router";
 import * as echarts from "echarts";
-import { palaceApi } from "@/api";
+import { palaceData } from "@/api/mockData";
 
 const router = useRouter();
 const achievements = ref(null);
@@ -91,22 +91,12 @@ let influenceChart = null;
 const fetchData = async () => {
   try {
     loading.value = true;
-    const [achievementRes, influenceRes] = await Promise.all([
-      palaceApi.getAchievements(),
-      palaceApi.getInfluence(),
-    ]);
-
-    if (achievementRes.data.code === 200) {
-      achievements.value = achievementRes.data.data;
-    }
-    if (influenceRes.data.code === 200) {
-      influence.value = influenceRes.data.data;
-    }
+    achievements.value = palaceData.achievements;
+    influence.value = palaceData.influence;
   } catch (error) {
     console.error("获取数据失败:", error);
-    const { palaceData: mockData } = await import("@/api/mockData.js");
-    achievements.value = mockData.achievements;
-    influence.value = mockData.influence;
+    achievements.value = palaceData.achievements;
+    influence.value = palaceData.influence;
   } finally {
     loading.value = false;
     initAllCharts();

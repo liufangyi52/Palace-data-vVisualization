@@ -10,8 +10,15 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3000,
+    port: 3155,
+    host: true,
     open: false,
+    proxy: {
+      "/api": {
+        target: "http://localhost:4000",
+        changeOrigin: true,
+      },
+    },
   },
   build: {
     target: "es2015",
@@ -28,6 +35,6 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    include: ["three", "echarts", "gsap"],
+    include: ["three", "echarts"],
   },
 });

@@ -123,15 +123,15 @@ class StatisticsService {
         id: p.id,
         name: p.name,
         dynasty: p.dynasty,
-        startYear: p.startYear,
-        endYear: p.endYear,
-        duration: Math.abs(p.endYear - p.startYear),
+        startYear: p.start_year,
+        endYear: p.end_year,
+        duration: Math.abs(p.end_year - p.start_year),
       }))
       .sort((a, b) => a.startYear - b.startYear);
 
     const yearRange = {
-      earliest: Math.min(...palaces.map((p) => p.startYear)),
-      latest: Math.max(...palaces.map((p) => p.endYear)),
+      earliest: Math.min(...palaces.map((p) => p.start_year)),
+      latest: Math.max(...palaces.map((p) => p.end_year)),
     };
 
     const result = {

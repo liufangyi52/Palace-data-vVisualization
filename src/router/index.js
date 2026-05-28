@@ -94,8 +94,8 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title
-    ? `${to.meta.title} - 中华宫殿`
-    : "中华宫殿数字孪生平台";
+    ? `${to.meta.title} - 孪境·丹宸`
+    : "孪境·丹宸 —— 基于数字孪生的中华宫殿可视化系统";
   next();
 });
 
